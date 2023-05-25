@@ -1,0 +1,23 @@
+
+cfg = dict(
+    model_type='bisenetv2',
+    n_cats=3,
+    num_aux_heads=2,
+    lr_start=1e-2,
+    weight_decay=5e-4,
+    warmup_iters=10,
+    max_iter=10000,
+    dataset='CustomerDataset',
+    im_root='./proper_data',
+    train_im_anns='./proper_anno.txt',
+    val_im_anns='./proper_anno.txt',
+    scales=[0.75, 2.],
+    cropsize=[512, 512],
+    eval_crop=[512, 512],
+    eval_scales=[0.5, 0.75, 1.0, 1.25, 1.5, 1.75],
+    ims_per_gpu=32,
+    eval_ims_per_gpu=1,
+    use_fp16=True,
+    use_sync_bn=False,
+    respth='./resv2',
+)
