@@ -123,3 +123,5 @@ tis/cpp_client/build/*
 log*txt
 
 tvm/
+data_root/
+proper_data/
